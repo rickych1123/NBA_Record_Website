@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="/NBA_Record_Website/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="/NBA_Record_Website/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-brand">Taiwan SportsLottery Record (NBA)</div>
+        </div>
+    </div>
+    <div class="container">
+        <form>
+            <select name="dates" onchange="showData(this.value)">
+                <option value="">Select a date:</option>
+                <option value="1">Today</option>
+                <option value="2">Last 7 days</option>
+                <option value="3">last 30 days</option>
+            </select>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+            <div id="chart-container" style="width:1000px">
+                <canvas id="mycanvas"></canvas>
+            </div>
+            <div class="container" id="mainTable"></div>
+        </div>
+    </div>
+    <br>
+    <div class="navbar navbar-default navbar-static-bottom">
+        <div class="container">
+            <p class="navbar-text">© 2016 Site built by rickych1123.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="/NBA_Record_Website/js/main.js"></script>
+</body>
+
+</html>
